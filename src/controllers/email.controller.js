@@ -10,6 +10,7 @@ export const email = async(req, res)=>{
             text: "Hello world?", // plain text body
             html: "<b>Hello world?</b>", // html body
           });
+          return res.status(200).json('correo enviado correctamente...!');
     } catch (e) {
         console.log(e);
         return res.status(500).json('Internal Server error...!');
